@@ -49,7 +49,7 @@ export default {
           <div class="left-jumbo">
             <h1 class="text-danger">Welcome to my Website</h1>
             <h4 class="text-info">My name is Massimo</h4>
-            <p>I am a junior-full stack web developer and on this site I present to you my work and my skills</p>
+            <p>I am a junior full-stack web developer and on this site I present to you my work and my skills</p>
           </div>
           <div class="right-jumbo">
             <div class="square"></div>
@@ -60,8 +60,49 @@ export default {
     </div>
 
     <section class="technology">
-      <h2>Technology</h2>
+      <h2 class="text-danger">Technology</h2>
+      <div class="container">
+        <div class="row justify-content-center mx-auto">
+          <div class="col-3">
+            <div class="back-img d-flex justify-content-center align-items-center">
+              <img width="100" src="/public/img/css.png" alt="">
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="back-img d-flex justify-content-center align-items-center">
+              <img width="100" src="/public/img/html.png" alt="">
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="back-img d-flex justify-content-center align-items-center">
+              <img width="100" src="/public/img/laravel.png" alt="">
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="back-img d-flex justify-content-center align-items-center">
+              <img width="100" src="/public/img/node.jpg" alt="">
+            </div>
+          </div>
+        </div>
 
+        <div class="row justify-content-center">
+          <div class="col-3">
+            <div class="back-img d-flex justify-content-center align-items-center">
+              <img width="100" src="/public/img/php.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="back-img d-flex justify-content-center align-items-center">
+              <img width="100" src="/public/img/vuejs.png" alt="">
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="back-img d-flex justify-content-center align-items-center">
+              <img width="100" src="/public/img/mysql.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <div class="container py-5">
