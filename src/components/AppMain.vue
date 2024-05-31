@@ -3,19 +3,19 @@ import axios from 'axios';
 
 export default {
   name: 'AppMain',
-  
 
-  data(){
-    return{
-      base_api_url:'http://127.0.0.1:8000',
-      base_projects_url:'/api/projects',
-      projects:[]
+
+  data() {
+    return {
+      base_api_url: 'http://127.0.0.1:8000',
+      base_projects_url: '/api/projects',
+      projects: []
     }
   },
   methods:
-    {
-      callApi(url) {
-        axios
+  {
+    callApi(url) {
+      axios
         .get(url)
         .then(response => {
           //console.log(response.data.projects);
@@ -24,17 +24,17 @@ export default {
         ).catch(err => {
           this.error_message = err.message;
         })
-      }
-    },
-  mounted(){
+    }
+  },
+  mounted() {
     /* axios
     .get('http://127.0.0.1:8000/api/projects')
     .then(response=>{
       console.log(response);
     }) */
 
-      let url = this.base_api_url + this.base_projects_url
-      this.callApi(url)
+    let url = this.base_api_url + this.base_projects_url
+    this.callApi(url)
   }
 }
 
@@ -42,13 +42,34 @@ export default {
 </script>
 
 <template>
-  <div class="bg-secondary">
+  <main>
+    <div class="jumbo-me">
+      <div class="container">
+        <div class="d-flex justify-content-between">
+          <div class="left-jumbo">
+            <h1 class="text-danger">Welcome to my Website</h1>
+            <h4 class="text-info">My name is Massimo</h4>
+            <p>I am a junior-full stack web developer and on this site I present to you my work and my skills</p>
+          </div>
+          <div class="right-jumbo">
+            <div class="square"></div>
+            <img class="img-me" src="/public/img/Jumbo.jpeg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="technology">
+      <h2>Technology</h2>
+
+    </section>
+
     <div class="container py-5">
       <div class="row">
-        <div class="col-4 gap-3 pb-3" v-for="project in projects.data" >
+        <div class="col-4 gap-3 pb-3" v-for="project in projects.data">
           <div class="card p-4 bg-dark border ">
             <template v-if="project.image.startsWith('uploads')">
-              <img class="card-img-top" :src="base_api_url  + /storage/ + project.image" alt="Title" />
+              <img class="card-img-top" :src="base_api_url + /storage/ + project.image" alt="Title" />
             </template>
             <template v-else>
               <img class="card-img-top" :src="project.image" alt="Title" />
@@ -61,7 +82,8 @@ export default {
         </div>
       </div>
     </div>
-  </div>
+  </main>
+
 
 </template>
 

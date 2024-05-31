@@ -5,24 +5,28 @@ export default {
 </script>
 
 <template>
-    <div class="border-bottom ">
+    <header>
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center py-3">
+                <div class="logo">
+                    <span class="text-light"><strong class="text-info">Massimo</strong>  Romano</span>
+                </div>
+                <div class="right-menu">
+                    <ul class="list-unstyled d-flex gap-4">
+                        <li class="fs-5 text-danger">
+                            Home
+                        </li>
+                        <li class="fs-5 text-info">
+                            About
+                        </li>
+                        <li class="fs-5 text-info">
+                            Project
+                        </li>
 
-        <ul
-         class="nav justify-content-center  bg-dark py-4"
-        >
-         <li class="nav-item fs-3">
-             <a class="nav-link active text-light" href="#" aria-current="page"
-                 >BoolFolio</a
-             >
-         </li>
-         <li class="nav-item fs-3">
-             <a class="nav-link text-danger" href="#">Home</a>
-         </li>
-         <li class="nav-item fs-3">
-             <a class="nav-link text-danger" href="#">About</a>
-         </li>
-        </ul>
-        
-         
-    </div>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </header>
 </template>

@@ -17,13 +17,16 @@ export default {
 </script>
 
 <template>
-
-<AppHeader />
-<AppMain />
-<AppFooter />
+ 
+ <body>
+    <AppHeader />
+    <AppMain />
+    <AppFooter />
+  </body>
 
 </template>
 
 <style>
-
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+@import './style.css';
 </style>
