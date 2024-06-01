@@ -1,13 +1,14 @@
-body{
+body {
   font-family: "proxima nova light", "Helvetica Neue", Helvetica, Arial, Sans-serif;
   color: #333333;
-  text-rendering: optimizeLegibility;
+  
 }
 
 header {
   background-color: #111;
   height: 100px;
 }
+
 
 main {
   background-color: rgb(255, 255, 255);
@@ -28,11 +29,15 @@ main {
     overflow: hidden;
     top: 150px;
     padding: 0 400px 0 0;
+    text-rendering: optimizeLegibility;
 
     >h1 {
       margin-bottom: 20px;
       animation: slide-left 1000ms;
       font-size: 60px;
+      color: #333333;
+      font-family: "proxima nova light", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+      font-weight: bolder;
     }
 
     h4 {
@@ -44,7 +49,6 @@ main {
     p {
       animation: slide-left 1000ms;
       font-size: 30px;
-      color: white;
     }
 
   }
@@ -106,6 +110,9 @@ main {
     left: 40%;
     top: -8%;
     animation: slide-up 1000ms;
+    color: #333333;
+    font-family: "proxima nova light", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+    font-weight: bolder;
   }
 
   .back-img {

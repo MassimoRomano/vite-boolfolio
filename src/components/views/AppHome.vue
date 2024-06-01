@@ -47,8 +47,8 @@ export default {
       <div class="container">
         <div class="d-flex justify-content-between">
           <div class="left-jumbo">
-            <h1 class="text-danger">Welcome to my Website</h1>
-            <h4 class="text-info">My name is Massimo</h4>
+            <h1>Welcome to my Website</h1>
+            <h4>My name is Massimo</h4>
             <p>I am a junior full-stack web developer and on this site I present to you my work and my skills</p>
           </div>
           <div class="right-jumbo">
@@ -60,7 +60,7 @@ export default {
     </div>
 
     <section class="technology">
-      <h2 class="text-danger">Technology</h2>
+      <h2>Technology</h2>
       <div class="container">
         <div class="row justify-content-center mx-auto">
           <div class="col-3">
