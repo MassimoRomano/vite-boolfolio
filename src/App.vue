@@ -1,13 +1,12 @@
 <script>
 import AppHeader from './components/partials/AppHeader.vue'
 import AppFooter from './components/partials/AppFooter.vue'
-import AppHome from './components/views/AppHome.vue';
+
 
 
 export default {
   name:'App',
   components:{
-    AppHome,
     AppHeader,
     AppFooter,
   },
@@ -20,7 +19,9 @@ export default {
  
  <body>
     <AppHeader />
-    <AppMain />
+    <main>
+      <RouterView />
+    </main>
     <AppFooter />
   </body>
 

@@ -14,13 +14,13 @@ export default {
                 <div class="right-menu">
                     <ul class="list-unstyled d-flex gap-4">
                         <li class="fs-5 text-danger">
-                            Home
+                            <router-link :to="{name:'Home'}">Home</router-link>
                         </li>
                         <li class="fs-5 text-info">
-                            About
+                            <router-link :to="{name:'About'}">About</router-link>
                         </li>
                         <li class="fs-5 text-info">
-                            Project
+                            <router-link :to="{name:'Project'}">Projects</router-link>
                         </li>
                     </ul>
                 </div>

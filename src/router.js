@@ -13,3 +13,5 @@ const router = createRouter({
         {path:'/contacts', component:AppContacts, name:'Contacts'}
     ]
 })
+
+export default router
