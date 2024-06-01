@@ -1,13 +1,13 @@
 <script>
-import AppHeader from './components/AppHeader.vue'
-import AppFooter from './components/AppFooter.vue'
-import AppMain from './components/AppMain.vue';
+import AppHeader from './components/partials/AppHeader.vue'
+import AppFooter from './components/partials/AppFooter.vue'
+import AppHome from './components/views/AppHome.vue';
 
 
 export default {
   name:'App',
   components:{
-    AppMain,
+    AppHome,
     AppHeader,
     AppFooter,
   },
