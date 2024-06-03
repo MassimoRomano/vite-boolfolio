@@ -108,7 +108,7 @@ export default {
     <div class="container py-5">
       <div class="row">
         <div class="col-4 gap-3 pb-3" v-for="project in projects.data" :key="project.id">
-          <router-link :to="{ name: 'Single', params: { id: project.id }, props: { project } }">
+          <router-link :to="{ name: 'Single', params: { id: project.id }, }">
             <div class="card p-4 bg-dark border">
               <template v-if="project.image.startsWith('uploads')">
                 <img class="card-img-top" :src="base_api_url + /storage/ + project.image" alt="Title" />
