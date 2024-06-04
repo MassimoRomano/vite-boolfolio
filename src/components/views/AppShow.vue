@@ -21,6 +21,7 @@ export default {
                     this.loading = false
                 } else {
                     // Gestisci il caso in cui la chiamata API non abbia successo
+                    this.$route.push({name: 'not-found'})
                 }
             })
             .catch(err => {

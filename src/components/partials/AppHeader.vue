@@ -23,6 +23,9 @@ export default {
                         <li class="fs-5">
                             <router-link :to="{ name: 'Project' }">Projects</router-link>
                         </li>
+                        <li class="fs-5">
+                            <router-link :to="{ name: 'Contacts' }">Contacts</router-link>
+                        </li>
                     </ul>
                 </div>
             </div>
